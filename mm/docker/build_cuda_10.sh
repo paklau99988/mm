@@ -1,0 +1,1 @@
+sudo docker build -t cuda10 cuda10
