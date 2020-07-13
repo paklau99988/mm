@@ -1,5 +1,5 @@
-#FROM nvcr.io/nvidia/pytorch:20.03-py3
-FROM nvcr.io/nvidia/pytorch:19.10-py3
+FROM nvcr.io/nvidia/pytorch:20.03-py3
+#FROM nvcr.io/nvidia/pytorch:19.10-py3
 
 # https://github.com/freemanix/torchbuilder/blob/master/Dockerfile
 
