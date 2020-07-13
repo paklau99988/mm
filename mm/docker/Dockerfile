@@ -1,9 +1,5 @@
-#FROM nvcr.io/nvidia/tensorrt:19.03-py3
-# FROM nvcr.io/nvidia/pytorch:19.07-py3
-# FROM nvcr.io/nvidia/pytorch:18.12-py3
-#FROM nvcr.io/nvidia/pytorch:19.04-py3
-FROM nvcr.io/nvidia/pytorch:20.03-py3
-#FROM nvcr.io/nvidia/pytorch:19.10-py3
+#FROM nvcr.io/nvidia/pytorch:20.03-py3
+FROM nvcr.io/nvidia/pytorch:19.10-py3
 
 # https://github.com/freemanix/torchbuilder/blob/master/Dockerfile
 
@@ -30,7 +26,7 @@ RUN ls -la /opt/conda/lib
 #RUN tar xvzf ${CMAKE} && cd cmake* && ./bootstrap --parallel=$(nproc)
 #RUN cd cmake* && make -j$(nproc) && make install
 
-
+RUN conda install cudatoolkit=10.1
 RUN conda install -c anaconda python=3.7.4
 RUN find / -name conda
 
