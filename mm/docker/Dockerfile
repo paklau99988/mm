@@ -184,4 +184,4 @@ EXPOSE 6006 3838 8787 8888 8786 9786 8788 5432 8000 7800 9999 7842 22 3122 7847 
 RUN conda install notebook ipykernel
 RUN ipython kernel install --user
 
-pip install jupytext
+RUN pip install jupytext pretrainedmodels efficientnet_pytorch fastprogress
